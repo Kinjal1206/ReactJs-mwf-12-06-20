@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+form{
+    background: lightsalmon;
+    width: 40%;
+    padding: 50px;
+    border-radius: 20px;
+}
+input{
+    height: 50px;
+    width: 350px;
+    
+    border: 2px solid lightcoral;
+    background-color: lightcyan;
+    border-radius: 20px;
+    padding: 0px 10px;
+}
+button{
+    width: 200px;
+    height: 40px;
+    background-color: red;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+}
