@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Q6</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='CSS/style.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div>
+        <h1>Q6. W.A.P. to print compound interest take input from user?</h1>
+        <input type="text" id="p" placeholder="Enter principal value"><br><br>
+        <input type="text" id="r" placeholder="Enter interst rate"><br><br>
+        <input type="text" id="n" placeholder="Enter interest applied  per time period"><br><br>
+        <input type="text" id="t" placeholder="Enter period"><br><br>
+        
+        <button  onclick="com()">click here</button>
+        <script>
+            function com(){
+         var p=document.getElementById("p").value;
+         var r=document.getElementById("r").value;
+         var n=document.getElementById("n").value;
+         var t=document.getElementById("t").value;
+         var amount=p*Math.pow((1+r/n),t);
+         document.write("Total amount is:"+ amount);
+        }
+        </script>
+    </div>
+</body>
+</html>
