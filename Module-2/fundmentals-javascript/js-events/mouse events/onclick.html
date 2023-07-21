@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>On click event</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <style>
+        img{
+            height: 400px;
+            width: 400px;
+        }
+    </style>
+    <!-- <script>
+        // function on(){
+        //     document.getElementById("image").src="images/bulb-on.png";
+        // }
+        // function off(){
+        //     document.getElementById("image").src="images/bulb-off.png"
+        // }
+            // var img=document.querySelector("#image");
+            // function change(){
+            //     img.src='images/bulb-on.png';
+            // }
+    </script> -->
+</head>
+<body>
+    <button id="on" onclick="change()">on</button>
+     <!-- <img id="image" src="images/bulb-off.png" onclick="on()" onmouseout="off()">  -->
+    <img src="images/bulb-off.png" alt="" id="image">    
+
+    <script>
+        var img=document.querySelector("#image");
+             function change(){
+                img.src='images/bulb-on.png';
+            }
+    </script>
+</body>
+
+
+
+<!-- <body>
+  <button onclick="changeImage()">Click me</button>
+  <br /><br />
+  <img id="image" src="images/bulb-off.png" />
+  <script>
+
+    var image = document.querySelector('#image');
+    
+    function changeImage() {
+        image.src = 'images/bulb-on.png';
+    }
+
+  </script>
+</body> -->
+
+</html>

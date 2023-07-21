@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Onblur mouse events</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script>
+        function change()
+        {
+        var fnm=document.getElementById("fnm");
+        fnm.value=fnm.value.toUpperCase();
+        var lnm=document.getElementById("lnm");
+        lnm.value=lnm.value.toUpperCase();
+        var email=document.getElementById("email");
+        email.value=email.value.toUpperCase();
+    }
+    </script>
+</head>
+<body>
+    <center>
+        <h1>Registerision Form</h1>
+        <form name="registerForm" action="welcome.html" onsubmit="return valid (this.value)">
+            <input type="text" name="fname" id="fnm" placeholder="Enter Your First name" onblur="change();">
+            <br><br>
+            <input type="text" name="lname" id="lnm" placeholder="Enter Your Last name" onblur="change();">
+            <br><br>
+            <input type="email" name="email" id="email" placeholder="Enter Your Email" onblur="change();">
+            <br><br>
+            <button type="submit">Register Now</button>
+        </form>
+    </center>
+</body>
+</html>
